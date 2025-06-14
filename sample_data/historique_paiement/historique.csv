@@ -1,0 +1,5 @@
+client_id,name,nombre_de_rappels_de_paiement,nombre_de_retards_de_paiement,nombre_de_facture_impayées,nombre_total_de_factures,pourcentage_de_factures_impayées
+1,Client A,1,0,0,2,0.0
+2,Client B,2,1,1,2,50.0
+3,Client C,0,0,1,2,50.0
+4,Client D,3,2,1,1,100.0
