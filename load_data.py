@@ -1,20 +1,16 @@
-
-import pandas as pd
-import os
-
-BASE_PATH = os.path.join(os.path.dirname(__file__), 'sample_data')
+from database import read_table
 
 def load_clients():
-    return pd.read_csv(os.path.join(BASE_PATH, 'clients', 'clients.csv'))
+    return read_table("clients")
 
 def load_factures():
-    return pd.read_csv(os.path.join(BASE_PATH, 'factures', 'factures.csv'))
+    return read_table("factures")
 
 def load_paiements():
-    return pd.read_csv(os.path.join(BASE_PATH, 'paiements', 'paiements.csv'))
+    return read_table("paiements")
 
 def load_clients_data():
-    return pd.read_csv(os.path.join(BASE_PATH, 'historique_paiement', 'historique.csv'))
+    return read_table("historique")
 
 def get_unpaid_factures():
     factures = load_factures()
